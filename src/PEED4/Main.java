@@ -33,21 +33,12 @@ public class Main {
 
 		}
 
-		try
-
-		{
-
-		    System.out.println("Debes recargar monedero");
-
-		    mimonedero.recargar(300);
-
-		} catch (Exception e)
-
-		{
-
-		    System.out.print("Error al recargar");
-
-		}
+		try {
+            System.out.println(" Modificación 1");
+            mimonedero.recargar(200);
+     } catch (Exception e) {
+             System.out.print("Ha fallado la recarga");
+    }
 
 		double saldo_disponible = mimonedero.efectivo();
 		return saldo_disponible;
